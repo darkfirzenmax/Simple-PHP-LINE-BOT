@@ -12,7 +12,7 @@ $url = 'https://testlab.firstohm.com.tw/index.php';
 'resource'=>'userinfo',
 'option'=>'com_api',
 'key'=>'ef280bf8341539515115a5514249cba8',
-'linemsg'=>'$text'
+'linemsg'=>'text'
     );
 	
 $ch = curl_init($url);
