@@ -4,16 +4,15 @@ require_once __DIR__ . '/lineBot.php';
 $bot = new Linebot();
 $text = $bot->getMessageText();
 $bot->reply('==>'.$text);
-$url = 'https://testlab.firstohm.com.tw/index.php';
-
-    $data = array(
-       'app'=>'users',
+$url = 'https://testlab.firstohm.com.tw/index.php?app=users&format=raw&resource=userinfo&option=com_api&key=ef280bf8341539515115a5514249cba8&linemsg=99999999';
+$data = array(
+'app'=>'users',
 'format'=>'raw',
 'resource'=>'userinfo',
 'option'=>'com_api',
 'key'=>'ef280bf8341539515115a5514249cba8',
 'linemsg'=>'text'
-    );
+);
 	
 $ch = curl_init($url);
 # Form data string
